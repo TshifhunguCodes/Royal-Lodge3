@@ -1,135 +1,221 @@
-
-<!-- FILE 1: index.html for Website 1 (Minimalist Elegance) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Lodge | Luxury Stay in Sibasa</title>
+    <title>ROYAL LODGE | Comfortable Accommodation in Sibasa</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏨</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ffffff%22>🏨</text></svg>">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">
+            <span class="logo-letter">Royal</span>
+            <span class="logo-letter">Lodge</span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Royal Lodge<span>.</span></a>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <span class="logo-main">ROYAL</span>
+                    <span class="logo-sub">LODGE</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-text="HOME">HOME</a>
+                <a href="#about" class="nav-link" data-text="EXPERIENCE">EXPERIENCE</a>
+                <a href="#rooms" class="nav-link" data-text="SUITES">SUITES</a>
+                <a href="#facilities" class="nav-link" data-text="AMENITIES">AMENITIES</a>
+                <a href="#gallery" class="nav-link" data-text="GALLERY">GALLERY</a>
+                <a href="#location" class="nav-link" data-text="LOCATION">LOCATION</a>
+                <a href="#contact" class="nav-link cta-nav" data-text="RESERVE">RESERVE</a>
+            </div>
+            
             <button class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about1.html">About</a></li>
-                <li><a href="#rooms">Rooms</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#contact" class="cta-button">Book Now</a></li>
-            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Experience Luxury in the Heart of Sibasa</h1>
-                <p class="hero-subtitle">Comfortable accommodations with African charm, modern amenities, and exceptional service await you at Royal Lodge.</p>
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-slide active" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('images/pic.jpg') center/cover no-repeat;"></div>
+            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('images/pic.jpg') center/cover no-repeat;"></div>
+            <div class="hero-slide" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('images/about.jpg') center/cover no-repeat;"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">COMFORTABLE</span>
+                    <span class="title-line">ACCOMMODATION</span>
+                    <span class="title-line">IN SIBASA</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <p>Modern rooms with air-conditioning, free WiFi, and all amenities for a perfect stay in Venda's heartland.</p>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#rooms" class="btn-primary">View Rooms</a>
-                    <a href="#facilities" class="btn-secondary">Explore Facilities</a>
+                    <a href="#rooms" class="btn-primary">
+                        <span>VIEW ROOMS</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <span>BOOK NOW</span>
+                        <i class="fas fa-calendar"></i>
+                    </a>
                 </div>
             </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">9.3</span>
-                    <span class="stat-label">Review Score</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">8.6</span>
-                    <span class="stat-label">Location Rating</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Security</span>
+            
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <div class="scroll-line"></div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+        
+        <div class="hero-footer">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="9.3">0</div>
+                    <div class="stat-label">Guest Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2">0</div>
+                    <div class="stat-label">Room Types</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">% Satisfaction</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- About Preview -->
-    <section class="about-preview">
-        <div class="container">
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
             <div class="section-header">
-                <h2>Comfort Meets Tradition</h2>
-                <p>Royal Lodge in Sibasa offers a unique blend of modern comfort and traditional African hospitality.</p>
+                <span class="section-subtitle">THE EXPERIENCE</span>
+                <h2 class="section-title">Comfort & Convenience<br>in Sibasa</h2>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bed"></i>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-main" style="background: url('https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070') center/cover no-repeat;"></div>
+                        <div class="image-overlay"></div>
                     </div>
-                    <h3>Comfortable Rooms</h3>
-                    <p>Air-conditioned rooms with free WiFi, modern amenities, and exceptional cleanliness.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-utensils"></i>
+                
+                <div class="about-text">
+                    <div class="about-feature">
+                        <div class="feature-number">01</div>
+                        <div class="feature-content">
+                            <h3>Comfortable Accommodations</h3>
+                            <p>Royal Lodge in Sibasa offers comfortable rooms with air-conditioning, free WiFi, and modern amenities. Guests appreciate the room cleanliness and comfort.</p>
+                        </div>
                     </div>
-                    <h3>African Dining</h3>
-                    <p>Family-friendly restaurant serving authentic African cuisine in a traditional ambience.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                    
+                    <div class="about-feature">
+                        <div class="feature-number">02</div>
+                        <div class="feature-content">
+                            <h3>Dining Experience</h3>
+                            <p>The family-friendly restaurant serves African cuisine in a traditional ambience. Meals are available for brunch, lunch, and dinner.</p>
+                        </div>
                     </div>
-                    <h3>Full Security</h3>
-                    <p>24-hour security, CCTV surveillance, and secure parking for complete peace of mind.</p>
+                    
+                    <div class="about-feature">
+                        <div class="feature-number">03</div>
+                        <div class="feature-content">
+                            <h3>Full Security & Services</h3>
+                            <p>The lodge provides free on-site private parking, daily housekeeping, and full-day security for your peace of mind throughout your stay.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <a href="about1.html" class="btn-secondary">Discover More About Us</a>
             </div>
         </div>
     </section>
 
     <!-- Rooms Section -->
     <section class="rooms" id="rooms">
-        <div class="container">
+        <div class="section-container">
             <div class="section-header">
-                <h2>Luxury Accommodations</h2>
-                <p>Choose from our elegant room options designed for your comfort</p>
+                <span class="section-subtitle">ACCOMMODATIONS</span>
+                <h2 class="section-title">Our Room Types</h2>
             </div>
+            
             <div class="rooms-grid">
                 <div class="room-card">
-                    <div class="room-image" style="background-color: #e6d5c3;">
-                        <div class="room-badge">Most Popular</div>
-                        <div class="room-info">
-                            <h3>Deluxe Double Room</h3>
-                            <div class="room-features">
-                                <span><i class="fas fa-user-friends"></i> 2 Guests</span>
-                                <span><i class="fas fa-bed"></i> 1 Double Bed</span>
-                                <span><i class="fas fa-bath"></i> Private Bathroom</span>
+                    <div class="room-image" style="background: url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=2070') center/cover no-repeat;">
+                        <div class="room-overlay">
+                            <div class="room-content">
+                                <h3 class="room-title">DELUXE DOUBLE ROOM</h3>
+                                <p class="room-desc">Comfortable accommodation with modern amenities</p>
+                                <div class="room-features">
+                                    <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                                    <span><i class="fas fa-bed"></i> 1 Double Bed</span>
+                                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                                </div>
+                                <a href="#contact" class="room-link">BOOK NOW <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
+                    <div class="room-info">
+                        <h3>DELUXE DOUBLE ROOM</h3>
+                        <div class="room-price">MODERN COMFORT</div>
+                    </div>
                 </div>
+                
                 <div class="room-card">
-                    <div class="room-image" style="background-color: #c9c0b7;">
-                        <div class="room-info">
-                            <h3>Luxury Double Room</h3>
-                            <div class="room-features">
-                                <span><i class="fas fa-user-friends"></i> 2 Guests</span>
-                                <span><i class="fas fa-bed"></i> 1 Double Bed</span>
-                                <span><i class="fas fa-bath"></i> Private Bathroom</span>
+                    <div class="room-image" style="background: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070') center/cover no-repeat;">
+                        <div class="room-overlay">
+                            <div class="room-content">
+                                <h3 class="room-title">LUXURY DOUBLE ROOM</h3>
+                                <p class="room-desc">Premium accommodation with enhanced amenities</p>
+                                <div class="room-features">
+                                    <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                                    <span><i class="fas fa-bed"></i> 1 Double Bed</span>
+                                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                                </div>
+                                <a href="#contact" class="room-link">BOOK NOW <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
+                    </div>
+                    <div class="room-info">
+                        <h3>LUXURY DOUBLE ROOM</h3>
+                        <div class="room-price">PREMIUM STAY</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-details" style="margin-top: 4rem; padding: 2rem; background: var(--light-gray);">
+                <h3 style="text-align: center; margin-bottom: 1rem; font-family: var(--font-secondary);">Room Information</h3>
+                <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem;">🛏️</div>
+                        <div style="font-size: 0.9rem; color: var(--text-light);">1 Double Bed</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem;">🛁</div>
+                        <div style="font-size: 0.9rem; color: var(--text-light);">Private Bathroom</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem;">☕</div>
+                        <div style="font-size: 0.9rem; color: var(--text-light);">Tea/Coffee Maker</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem;">❄️</div>
+                        <div style="font-size: 0.9rem; color: var(--text-light);">Air Conditioning</div>
                     </div>
                 </div>
             </div>
@@ -138,27 +224,157 @@
 
     <!-- Facilities Section -->
     <section class="facilities" id="facilities">
-        <div class="container">
-            <div class="section-header">
-                <h2>Premium Facilities</h2>
-                <p>Enjoy our range of amenities designed for a comfortable stay</p>
+        <div class="section-container">
+            <div class="facilities-header">
+                <div class="header-content">
+                    <span class="section-subtitle">AMENITIES</span>
+                    <h2 class="section-title">Excellent<br>Facilities</h2>
+                </div>
+                <div class="header-description">
+                    <p>Great facilities! Review score: 9.3. Enjoy all modern amenities for a comfortable stay.</p>
+                </div>
             </div>
-            <div class="facilities-list">
-                <div class="facility-category">
-                    <h3><i class="fas fa-wifi"></i> Internet</h3>
-                    <p>Free high-speed WiFi available in all areas</p>
+            
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free WiFi</h3>
+                    <p>Available in all areas, free of charge</p>
                 </div>
-                <div class="facility-category">
-                    <h3><i class="fas fa-parking"></i> Parking</h3>
-                    <p>Free private and accessible parking on site</p>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Private on-site parking, no reservation needed</p>
                 </div>
-                <div class="facility-category">
-                    <h3><i class="fas fa-concierge-bell"></i> Services</h3>
-                    <p>Daily housekeeping, laundry, and 24-hour security</p>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant</h3>
+                    <p>African cuisine in traditional ambience</p>
                 </div>
-                <div class="facility-category">
-                    <h3><i class="fas fa-tv"></i> Entertainment</h3>
-                    <p>Streaming services and satellite channels in all rooms</p>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Air Conditioning</h3>
+                    <p>All rooms equipped with climate control</p>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>24-Hour Security</h3>
+                    <p>Full-day security and CCTV surveillance</p>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Streaming Services</h3>
+                    <p>Netflix and satellite channels available</p>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Daily Housekeeping</h3>
+                    <p>Professional cleaning service every day</p>
+                </div>
+                
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Tea/Coffee Maker</h3>
+                    <p>Available in all rooms for your convenience</p>
+                </div>
+            </div>
+            
+            <!-- Additional Facilities List -->
+            <div class="additional-facilities" style="margin-top: 4rem; padding: 3rem; background: var(--light-gray);">
+                <h3 style="text-align: center; margin-bottom: 2rem; font-family: var(--font-secondary);">More Great Facilities</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; color: var(--text-light);">
+                    <div>
+                        <h4 style="color: var(--white); margin-bottom: 0.5rem;">Living Area</h4>
+                        <p>• Desk<br>• Streaming service (like Netflix)<br>• Satellite channels<br>• TV</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--white); margin-bottom: 0.5rem;">Services</h4>
+                        <p>• Daily housekeeping<br>• Ironing service<br>• Laundry (additional charge)<br>• Meeting/banquet facilities</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--white); margin-bottom: 0.5rem;">Safety & Security</h4>
+                        <p>• Fire extinguishers<br>• CCTV outside property<br>• CCTV in common areas<br>• 24-hour security<br>• Safety deposit box</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--white); margin-bottom: 0.5rem;">General</h4>
+                        <p>• Non-smoking rooms<br>• Ironing facilities<br>• English spoken</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery" style="padding: 8rem 0; background: var(--gray);">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">PHOTO GALLERY</span>
+                <h2 class="section-title">Royal Lodge<br>in Pictures</h2>
+            </div>
+            
+            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+                <div class="gallery-item" style="position: relative; overflow: hidden; height: 250px;">
+                    <div style="width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2070') center/cover no-repeat; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 1rem; color: white; transform: translateY(100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
+                        Deluxe Room Interior
+                    </div>
+                </div>
+                
+                <div class="gallery-item" style="position: relative; overflow: hidden; height: 250px;">
+                    <div style="width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=2074') center/cover no-repeat; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 1rem; color: white; transform: translateY(100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
+                        Restaurant & Dining Area
+                    </div>
+                </div>
+                
+                <div class="gallery-item" style="position: relative; overflow: hidden; height: 250px;">
+                    <div style="width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070') center/cover no-repeat; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 1rem; color: white; transform: translateY(100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
+                        Lodge Exterior
+                    </div>
+                </div>
+                
+                <div class="gallery-item" style="position: relative; overflow: hidden; height: 250px;">
+                    <div style="width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=2070') center/cover no-repeat; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 1rem; color: white; transform: translateY(100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
+                        Comfortable Lounge Area
+                    </div>
+                </div>
+                
+                <div class="gallery-item" style="position: relative; overflow: hidden; height: 250px;">
+                    <div style="width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080') center/cover no-repeat; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 1rem; color: white; transform: translateY(100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
+                        Bathroom Amenities
+                    </div>
+                </div>
+                
+                <div class="gallery-item" style="position: relative; overflow: hidden; height: 250px;">
+                    <div style="width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1559508551-44bff1de756b?q=80&w=2069') center/cover no-repeat; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 1rem; color: white; transform: translateY(100%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);">
+                        Room Service
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,31 +382,111 @@
 
     <!-- Location Section -->
     <section class="location" id="location">
-        <div class="container">
-            <div class="section-header">
-                <h2>Perfect Location</h2>
-                <p>Situated in the heart of Sibasa with easy access to natural attractions</p>
-            </div>
-            <div class="location-content">
-                <div class="location-info">
-                    <p><i class="fas fa-map-marker-alt"></i> 638 Lutambwe Street Makwarela, 0950 Sibasa, South Africa</p>
-                    <div class="location-attractions">
-                        <h4>Nearby Attractions:</h4>
-                        <ul>
-                            <li><strong>Mphaphuli Nature Reserve:</strong> 28 km away</li>
-                            <li><strong>Entabeni State Forest:</strong> 40 km from the property</li>
-                        </ul>
+        <div class="location-container">
+            <div class="location-map">
+                <div class="map-visual">
+                    <div class="map-point" style="top: 40%; left: 45%;">
+                        <div class="point-dot"></div>
+                        <div class="point-label">ROYAL LODGE</div>
                     </div>
-                    <p class="location-note">Couples particularly like the location — rated <strong>8.6</strong> for a two-person trip.</p>
                 </div>
-                <div class="location-map">
-                    <!-- Map placeholder -->
-                    <div class="map-placeholder">
-                        <div class="map-marker">
-                            <i class="fas fa-map-pin"></i>
+            </div>
+            
+            <div class="location-info">
+                <div class="section-header">
+                    <span class="section-subtitle">DISCOVER</span>
+                    <h2 class="section-title">Great<br>Location</h2>
+                </div>
+                
+                <div class="location-details">
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>638 Lutambwe Street, Makwarela<br>Sibasa, South Africa 0950</p>
                         </div>
-                        <p>Royal Lodge Location</p>
                     </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-tree"></i>
+                        <div>
+                            <h4>Nearby Attractions</h4>
+                            <p>28km to Mphaphuli Nature Reserve<br>40km to Entabeni State Forest</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4>Couples Love It</h4>
+                            <p>Rated <strong>8.6/10</strong> by couples for romantic getaways</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h2>Book Your<br>Stay at<br>Royal Lodge</h2>
+                    <div class="booking-info" style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.05);">
+                        <h4 style="margin-bottom: 1rem; color: var(--accent);">House Rules & Policies</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                            <div>
+                                <p><strong>Check-in:</strong> From 14:00</p>
+                                <p><strong>Check-out:</strong> Until 10:00</p>
+                                <p><strong>Pets:</strong> Not allowed</p>
+                            </div>
+                            <div>
+                                <p><strong>Children:</strong> All ages welcome</p>
+                                <p><strong>Cots/Extra beds:</strong> Not available</p>
+                                <p><strong>Age restriction:</strong> No requirement</p>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-light);">
+                            <i class="fas fa-info-circle"></i> Cancellation policies vary by accommodation type
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" placeholder="Check-in" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" placeholder="Check-out" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Select Room Type</option>
+                                <option value="deluxe">Deluxe Double Room</option>
+                                <option value="luxury">Luxury Double Room</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests (optional)" rows="3" style="width: 100%; padding: 1rem; background: var(--black); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--white); font-family: var(--font-primary); font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>REQUEST BOOKING</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-light); text-align: center;">
+                            <i class="fas fa-credit-card"></i> Payment processed by Booking.com
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>
@@ -198,34 +494,63 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
+        <div class="footer-container">
+            <div class="footer-main">
                 <div class="footer-brand">
-                    <a href="#" class="logo">Royal Lodge<span>.</span></a>
-                    <p>Experience luxury and comfort in the heart of Sibasa, South Africa.</p>
+                    <div class="footer-logo">ROYAL<br>LODGE</div>
+                    <p>Comfortable accommodation in the heart of Sibasa</p>
+                    <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                        <span style="background: var(--light-gray); padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 2px;">Free WiFi</span>
+                        <span style="background: var(--light-gray); padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 2px;">Free Parking</span>
+                        <span style="background: var(--light-gray); padding: 0.3rem 0.8rem; font-size: 0.8rem; border-radius: 2px;">Restaurant</span>
+                    </div>
                 </div>
+                
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about1.html">About Us</a></li>
-                        <li><a href="#rooms">Rooms</a></li>
-                        <li><a href="#facilities">Facilities</a></li>
-                    </ul>
+                    <h4>Navigation</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">Experience</a>
+                    <a href="#rooms">Rooms</a>
+                    <a href="#facilities">Amenities</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#location">Location</a>
                 </div>
+                
                 <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> 638 Lutambwe Street, Sibasa</p>
-                    <p><i class="fas fa-globe"></i> www.royallodge-sibasa.com</p>
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 638 Lutambwe Street</p>
+                    <p><i class="fas fa-map"></i> Makwarela, Sibasa 0950</p>
+                    <p><i class="fas fa-phone"></i> +27 15 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> stay@royallodge.co.za</p>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2023 Royal Lodge. All rights reserved.</p>
-                <p class="disclaimer">Distance in property description is calculated using © OpenStreetMap</p>
+                <p>&copy; 2023 ROYAL LODGE SIBASA. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    
+    <script>
+        // Gallery hover effect
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.querySelector('div:first-child').style.transform = 'scale(1.1)';
+                item.querySelector('div:last-child').style.transform = 'translateY(0)';
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                item.querySelector('div:first-child').style.transform = 'scale(1)';
+                item.querySelector('div:last-child').style.transform = 'translateY(100%)';
+            });
+        });
+    </script>
 </body>
 </html>
